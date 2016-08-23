@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.widevision.numeral_concidepieces">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/CustomTheme">
+
+        <activity
+            android:name="com.widevision.numeral_concidepieces.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.widevision.numeral_concidepieces.activity.StartActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/CustomTheme" />
+
+        <activity
+            android:name="com.widevision.numeral_concidepieces.activity.HelpActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/CustomTheme" />
+    </application>
+
+</manifest>
